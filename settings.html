@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+
+   
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<style>
+    /* SETTINGS PAGE */
+
+.settings-page{
+    max-width:800px;
+    margin:0 auto;
+}
+
+.settings-page h2{
+    margin-bottom:25px;
+}
+
+.settings-form{
+    background:white;
+    padding:25px;
+    border-radius:16px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.settings-form input,
+.settings-form textarea{
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.settings-form button{
+    background:#4f46e5;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+body{
+    margin:0;
+    padding:0;
+    background:#f5f7fb;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.container{
+    display:flex;
+}
+
+.sidebar{
+    width:250px;
+    height:100vh;
+    background:#0b1023;
+    position:fixed;
+    left:0;
+    top:0;
+}
+
+.main-content{
+    margin-left:250px;
+    width:calc(100% - 250px);
+    padding:30px;
+}
+.settings-form button:hover{
+    background:#4338ca;
+}
+.settings-form input:focus,
+.settings-form textarea:focus{
+    outline:none;
+    border:1px solid #4f46e5;
+}
+</style>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <!-- Copy your sidebar here -->
+    </aside>
+<main class="main-content">
+
+    <div class="settings-page">
+
+        <h2>Store Settings</h2>
+
+        <form class="settings-form">
+
+            <label for="storeName">Store Name</label>
+            <input id="storeName" type="text" value="AcartZ Store">
+
+            <label for="email">Email</label>
+            <input id="email" type="email" value="admin@acartz.com">
+
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="text" value="+91 9876543210">
+
+            <label for="address">Business Address</label>
+            <textarea id="address" rows="4">Chennai, Tamil Nadu</textarea>
+
+            <label for="password">Change Password</label>
+            <input id="password" type="password" placeholder="New Password">
+
+            <button type="submit">
+                Save Changes
+            </button>
+
+        </form>
+
+    </div>
+
+</main>
+</body>
+</html>
+    
